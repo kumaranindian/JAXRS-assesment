@@ -1,0 +1,5 @@
+package com.jersey.countryxml.controller;
+
+public class CountryCtrlXML {
+
+}

@@ -1,0 +1,5 @@
+package com.jersey.countrysml.service;
+
+public class CountryxmlCollectionService {
+
+}

@@ -1,0 +1,5 @@
+package com.jersey.countryxml.pojo;
+
+public class Countryxml {
+
+}

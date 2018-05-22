@@ -1,0 +1,14 @@
+package com.jersey.country.dao;
+
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+
+public class ConnectToMongo {
+
+	
+	/*MongoClientURI uri = new MongoClientURI(
+	          "mongodb://root:root123@db1.avaldes.com:27017/?authSource=admin");*/
+	
+	MongoClientURI uri = new MongoClientURI("mongodb://localhost:27017/nodemongo");
+	MongoClient mongoClient = new MongoClient(uri);
+}

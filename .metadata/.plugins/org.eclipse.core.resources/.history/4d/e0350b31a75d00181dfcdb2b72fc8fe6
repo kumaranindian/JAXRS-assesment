@@ -1,0 +1,30 @@
+package com.jersey.country.dao;
+
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+
+public class ConnectToMongo {
+	MongoClient mongoClient=null;
+	
+	/*MongoClientURI uri = new MongoClientURI(
+	          "mongodb://root:root123@db1.avaldes.com:27017/?authSource=admin");*/
+	
+	
+    
+	try {
+		MongoClientURI uri = new MongoClientURI("mongodb://localhost:27017/nodemongo");
+		 mongoClient = new MongoClient(uri);	  
+	  // Old way to get database - deprecated now
+	  DB db = mongoClient.getDB("test");  
+	  
+	  // Old way to get collection - deprecated now
+	  DBCollection collection = db.getCollection("employee");
+	  System.out.println("collection: " + collection);
+	} catch (Exception e) {
+	  e.printStackTrace();
+	} finally{
+	  mongoClient.close();
+	}
+}}

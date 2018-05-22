@@ -1,0 +1,5 @@
+package com.jersey.country.dao;
+
+public class ConnectToMongo {
+
+}

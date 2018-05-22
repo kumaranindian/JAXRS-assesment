@@ -1,0 +1,7 @@
+package com.jersey.country.controller;
+
+import com.jersey.country.service.CountryCollectionService;
+
+public class Countrycontroller {
+	CountryCollectionService ccs=new CountryCollectionService()
+}

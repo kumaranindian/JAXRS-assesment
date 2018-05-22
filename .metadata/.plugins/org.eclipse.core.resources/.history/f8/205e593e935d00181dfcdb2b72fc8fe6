@@ -1,0 +1,39 @@
+package com.jersey.countrysml.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.jersey.country.pojo.Countrypojo;
+
+public class CountryxmlCollectionService {
+	public List getAllCountry() {
+		// TODO Auto-generated method stub
+		List countries = new ArrayList(countrymap.values());
+		return countries;
+	}
+
+	public Countrypojo getCountryById(int idToSearch) {
+		// TODO Auto-generated method stub
+		Countrypojo searchedCountry=countrymap.get(idToSearch);
+		return searchedCountry;
+
+		
+	}
+
+	public Countrypojo delCountryById(int idToDelete) {
+		// TODO Auto-generated method stub
+		Countrypojo f= countrymap.remove(idToDelete);		
+		return f;
+	}
+
+	public Countrypojo updateCountry(Countrypojo c) {
+		// TODO Auto-generated method stub
+		System.out.println("hai 2");
+		System.out.println("before update ==>"+c.getPopulation());
+
+		Countrypojo f= countrymap.put(c.getId(), c);	
+		System.out.println("after update ==>"+c.getPopulation());
+
+		return f;
+	}
+}

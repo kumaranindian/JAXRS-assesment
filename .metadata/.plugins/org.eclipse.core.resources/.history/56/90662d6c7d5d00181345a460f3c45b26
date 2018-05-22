@@ -1,0 +1,5 @@
+package com.jersey.country.pojo;
+
+public class Countrypojo {
+
+}

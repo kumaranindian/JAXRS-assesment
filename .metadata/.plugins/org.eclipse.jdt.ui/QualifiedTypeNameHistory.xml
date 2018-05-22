@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.jersey.countrysml.service.CountryxmlCollectionService"/>
+<fullyQualifiedTypeName name="com.jersey.countryxml.pojo.Countryxml"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlElement"/>
+<fullyQualifiedTypeName name="com.mongodb.MongoClientURI"/>
+<fullyQualifiedTypeName name="com.mongodb.MongoClient"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.mongodb.DB"/>
+<fullyQualifiedTypeName name="com.mongodb.DBCollection"/>
+<fullyQualifiedTypeName name="com.jersey.country.dao.ConnectToMongo"/>
+<fullyQualifiedTypeName name="com.mongodb.BasicDBObject"/>
+<fullyQualifiedTypeName name="com.jersey.country.pojo.Countrypojo"/>
+<fullyQualifiedTypeName name="org.glassfish.jersey.jackson.JacksonFeature"/>
+<fullyQualifiedTypeName name="org.glassfish.jersey.client.authentication.HttpAuthenticationFeature"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.UriBuilder"/>
+</qualifiedTypeNameHistroy>

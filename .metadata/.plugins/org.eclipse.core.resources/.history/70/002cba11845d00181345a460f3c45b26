@@ -1,0 +1,34 @@
+package com.jersey.country.controller;
+
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import com.jersey.country.service.CountryCollectionService;
+import com.jersey.friends.pojo.Friend;
+@Path("/country")
+public class Countrycontroller {
+	CountryCollectionService ccs=new CountryCollectionService();
+	//Jaxrs_Assesment/country/getallcountries
+	@GET
+	@Path("/getallcountries")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List getAllFriends() {
+		List allcountry = ccs.getAllCountry();
+		return allcountry;
+	}
+	// search by id
+	
+	@GET
+	@Path("/{id}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Countrypojo getFriendById(@PathParam("id") int idToSearch) {
+		Countrypojo searchedfrnd=	ccs.getCountryById(idToSearch);
+		return searchedfrnd;
+
+	}
+}

@@ -1,0 +1,26 @@
+package com.jersey.country.service;
+
+import java.util.HashMap;
+
+import com.jersey.country.pojo.Countrypojo;;
+
+public class CountryCollectionService {
+	
+	static HashMap<Integer, Countrypojo> countrymap = new HashMap<Integer, Countrypojo>();
+
+	public CountryCollectionService() {
+		super();
+
+		Countrypojo c1 = new Countrypojo(1, "India",10000,"in");
+		Countrypojo c4 = new Countrypojo(2, "Bhutan",7000,"bh");
+		Countrypojo c2 = new Countrypojo(4, "China",20000,"ch");
+		Countrypojo c3 = new Countrypojo(3, "Nepal",8000,"np");
+		
+		countrymap.put(1, c1);
+		countrymap.put(2, c4);
+		countrymap.put(3, c3);
+		countrymap.put(3, c2);
+
+	}
+
+}

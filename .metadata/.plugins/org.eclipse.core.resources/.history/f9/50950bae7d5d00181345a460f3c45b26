@@ -1,0 +1,9 @@
+package com.jersey.country.pojo;
+
+public class Countrypojo {
+int id;
+String countryname;
+long population;
+String countrycode;
+
+}
